@@ -82,7 +82,7 @@ You will see something like this: "C:\\Program Files\\R\\R-4.1.2\\bin\\Rscript.e
      ```
 
 - **Linux with CUDA GPU:** 
-- Open the Command Prompt, navigate to the ATLAS folder, then run the following lines of code: 
+- Open the Terminal, navigate to the ATLAS folder, then run the following lines of code: 
 
      ```bash
      pip install -r requirements.txt
