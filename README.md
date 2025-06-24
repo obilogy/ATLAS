@@ -50,9 +50,6 @@ ATLAS
 - RAR File Extractor, such as WinRAR (https://www.win-rar.com/download.html)
 - Python version: Python 3.11 | hint: for Windows, it might be easier to install from the Microsoft Store or here: https://www.python.org/downloads/release/python-3110/
 - R version: 4.1 or higher (required packages: ggplot2, gridExtra, zoo, stringr, dplyr, readr) | hint: easier to install through R studio: https://posit.co/downloads/
-- In the R script (scripts/R_msd_analysis.R) change the following line to YOUR own library path: .libPaths("C:/Users/user/Documents/R/win-library/4.1") | hint #1: This is the path to the package library of the R version used by Rstudio! | hint #2: If you have multiple R versions, choose the one used by Rstudio!
-- In the ATLAS folder go to src/components/, open ATLAS.py in notepad/mousepad, then search for "rscript_exe" using Ctrl+F, or scroll all the way down. 
-You will see something like this: "C:\\Program Files\\R\\R-4.1.2\\bin\\Rscript.exe", then change the path to YOUR working Rscript executable file. | hint: in Windows, you might only need to change the version number. 
   
 ## Data Preparation and Output Nomenclature:
 
@@ -65,9 +62,13 @@ You will see something like this: "C:\\Program Files\\R\\R-4.1.2\\bin\\Rscript.e
 ## Installation (If you encounter any issues please see FAQ section below): 
 
 - Download the ATLAS compressed file (.rar) from Zenodo: https://zenodo.org/records/15320358
-
 - Extract the ATLAS.rar file. Now you should have a folder named "ATLAS" that contains all necessary files.
-  Important Note: **(must be in the same hard drive as the files to be analyzed)**.
+- In the R script (scripts/R_msd_analysis.R) change the following line to YOUR own library path: .libPaths("C:/Users/user/Documents/R/win-library/4.1") | hint #1: This is the path to the package library of the R version used by Rstudio! | hint #2: If you have multiple R versions, choose the one used by Rstudio!
+- In the ATLAS folder go to src/components/, open ATLAS.py in notepad/mousepad, then search for "rscript_exe" using Ctrl+F, or scroll all the way down. 
+You will see something like this: "C:\\Program Files\\R\\R-4.1.2\\bin\\Rscript.exe", then change the path to YOUR working Rscript executable file. | hint: in Windows, you might only need to change the version number. 
+
+Important Note: ATLAS **(must be in the same hard drive as the files to be analyzed)**.
+
 
 - **Windows with CUDA GPU:** 
 - Open the Command Prompt, navigate to the ATLAS folder, then run the following lines of code: 
